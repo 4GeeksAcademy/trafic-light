@@ -10,3 +10,12 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+
+.selected {
+    box-shadow: 0 0 10px 30px rgba(255, 255, 255, 0.8); /* Ejemplo de efecto de selección */
+    border: 3px solid white;
+   
+}
+
+

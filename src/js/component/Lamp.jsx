@@ -1,12 +1,13 @@
 import React, { useState } from "react"
+import "../../styles/index.css"
 
 
-const Lamp =({initialColor})=>{
-    const [color, setColor]= useState(true)
+const Lamp =({initialColor,onClick,isSelected})=>{
+    
     return(
         <div>
 
-        <button onClick={()=>setColor(!color)} className= {`border border-1 border-dark rounded-circle mt-2 ${color ? initialColor:"bg-dark"}` }  style={{width:"100px",height:"100px"}}>
+        <button onClick={onClick} className= {`border border-1 border-dark rounded-circle mt-2 ${initialColor} ${isSelected ? "selected":""}` }  style={{width:"100px",height:"100px"}}>
         </button >
       
        
